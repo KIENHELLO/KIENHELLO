@@ -1,0 +1,39 @@
+
+
+.vocabulary-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 960px;
+  margin: auto;
+}
+
+.vocabulary-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.vocab-card {
+  background: #f9f9f9;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.vocab-card h3 {
+  margin: 0;
+  color: #34495e;
+}
+
+.example {
+  margin-top: 0.5rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
