@@ -10,11 +10,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
+from pathlib import Path
 
+# Đặt BASE_DIR ngay sau khi import
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Sử dụng STATIC_ROOT sau khi BASE_DIR đã được định nghĩa
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-ALLOWED_HOSTS = ['.onrender.com', 'localhost']
-from pathlib import Path
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
