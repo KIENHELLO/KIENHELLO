@@ -156,5 +156,6 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://yourfrontenddomain.com"
+    "https://kienhello.onrender.com"
 ]
+ 
