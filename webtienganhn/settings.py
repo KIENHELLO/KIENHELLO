@@ -66,7 +66,6 @@ MIDDLEWARE = [
 ]
 
 
-
 ROOT_URLCONF = 'webtienganhn.urls'
 
 TEMPLATES = [
