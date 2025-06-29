@@ -143,8 +143,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': None
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',  # Chỉ trả JSON
+        'DEFAULT_PAGINATION_CLASS': None
+    ]
 }
+
 
 
 
